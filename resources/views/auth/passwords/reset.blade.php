@@ -79,7 +79,8 @@
                     </div>
                     <hr>
                     <div class="login-body">
-                        <form action="" method="POST">
+                        <form action="{{ route('password.update') }}" method="POST">
+                        @csrf
                             <div class="form-group">
                                 <label for="Username">Email Address</label>
                                 <input type="email" name="" id="" class="form-control">
