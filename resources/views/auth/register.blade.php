@@ -97,15 +97,28 @@
                     <div class="login-body">
                         <form action="" method="POST">
                             <div class="form-group">
-                                <label for="Username">Name</label>
-                                <input type="text" name="" id="" class="form-control">
+                                <label for="Username">{{ __('Name') }}</label>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" name="" id="" class="form-control">
+                                <label for="email">{{ __('Email Address') }}</label>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">{{ __('Password') }}</label>
                                 <input type="password" name="" id="" class="form-control">
                             </div>
                             <div class="form-group">
