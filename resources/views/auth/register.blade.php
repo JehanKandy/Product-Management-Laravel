@@ -92,7 +92,8 @@
                     </div>
                     <hr>
                     <div class="login-body">
-                        <form action="" method="POST">
+                        <form action="{{ route('register') }}" method="POST">
+                        @csrf
                             <div class="form-group">
                                 <label for="Username">{{ __('Name') }}</label>
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
