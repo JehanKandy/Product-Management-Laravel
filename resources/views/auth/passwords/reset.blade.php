@@ -81,9 +81,19 @@
                     <div class="login-body">
                         <form action="{{ route('password.update') }}" method="POST">
                         @csrf
+
+                        <input type="hidden" name="token" value="{{ $token }}">
+
                             <div class="form-group">
-                                <label for="Username">Email Address</label>
-                                <input type="email" name="" id="" class="form-control">
+                                <label for="Username">{{ __('Email Address') }}</label>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                               
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Send Password Reset Link" class="login-btn">
