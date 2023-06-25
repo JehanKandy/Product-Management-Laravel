@@ -132,7 +132,7 @@
                                 @endif
                             </div>
                         </form>
-                        Don't Have an Account ? <a href="">Create One</a>
+                        Don't Have an Account ? <a href="{{ route('register') }}">Create One</a>
                         <hr>
                         <p class="develop">&copy;JehanKandy</p>
                     </div>
