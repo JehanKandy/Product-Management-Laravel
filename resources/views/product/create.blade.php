@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="product Price">Product Price : </label>
-                <input type="number" name="product_price" id="" class="form-control"><br>
+                <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" /><br>
             </div>
     
         </form>
