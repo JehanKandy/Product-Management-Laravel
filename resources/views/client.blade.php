@@ -1,4 +1,5 @@
 @extends('layouts.client_dash')
+@include('layouts.header')
 
 @section('content')
 {{-- <div class="container">
