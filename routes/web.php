@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +41,4 @@ Route::get('client', function(){
 })->name('client')->middleware('client');
 
 Route::resource("/users", MemberController::class);
+Route::resource("/product", ProductController::class);
