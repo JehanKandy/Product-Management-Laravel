@@ -2,5 +2,7 @@
 @include('layouts.header')
 
 @section('content')
-    Add
+    <div class="admin-card">
+        <h4><i class="fas fa-cart-plus"></i> Add New Product</h4>
+    </div>
 @endsection
