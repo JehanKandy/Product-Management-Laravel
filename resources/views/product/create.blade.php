@@ -8,7 +8,9 @@
         <hr>
 
         <form action="{{ url('student') }}" method="POST">
+        @csrf
         
+    
         </form>
     </div>
 @endsection
