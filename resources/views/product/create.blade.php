@@ -7,19 +7,15 @@
         <hr>
 
         @if ($errors->any())
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Error</strong> Following Input Errors are Found
-            <ul>
-                @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Error</strong> Following Input Errors are Found
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
 
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-            <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
 
@@ -36,7 +32,7 @@
             </div>
             <div class="form-group">
                 <label for="product qty">Product Qty : </label>
-                <input type="number" name="product_qty" id="" class="form-control" placeholder="Product Qty"><br>
+                <input type="number" name="qty" id="" class="form-control" placeholder="Product Qty"><br>
             </div>
             <div class="form-group">
                 <label for="product Price">Product Price : </label>
