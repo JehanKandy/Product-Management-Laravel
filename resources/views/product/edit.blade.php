@@ -29,7 +29,7 @@
     
         <div class="form-group">
             <label for="product name">Update Product Name : </label>
-            <input type="text" name="product_name" id=""  class="form-control" placeholder="Product Name"><br>
+            <input type="text" name="product_name" id=""  class="form-control" value="{{ $product->product_name }}" placeholder="Product Name"><br>
         </div>
         <div class="form-group">
             <label for="product desc">Update Product Description : </label>
