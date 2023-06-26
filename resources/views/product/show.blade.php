@@ -5,7 +5,7 @@
     <div class="admin-card">
         <a href="{{ url('/product') }}" class="btn btn-primary" title="Back">
             Back
-        </a>
+        </a><br><br>
         <div class="row">
             <div class="col-lg-3">
                 <h4>Product Name</h4>
