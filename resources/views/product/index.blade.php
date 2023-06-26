@@ -11,7 +11,6 @@
                 <tr>
                     <th>ID</th>
                     <th>Product Name</th>
-                    <th>Product Description</th>
                     <th>Product Qty</th>
                     <th>Product Price</th>
                     <th>Product Status</th>
@@ -24,7 +23,6 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->product_name }}</td>
-                        <td>{{ $item->product_description }}</td>
                         <td>{{ $item->qty }}</td>
                         <td>{{ $item->product_price }}</td>
                         <td>{{ $item->product_status }}</td>
