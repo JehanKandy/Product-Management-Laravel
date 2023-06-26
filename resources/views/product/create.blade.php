@@ -21,6 +21,10 @@
                 <label for="product qty">Product Qty : </label>
                 <input type="number" name="product_qty" id="" class="form-control"><br>
             </div>
+            <div class="form-group">
+                <label for="product Price">Product Price : </label>
+                <input type="number" name="product_price" id="" class="form-control"><br>
+            </div>
     
         </form>
     </div>
