@@ -6,6 +6,17 @@
         <h4><i class="fas fa-cart-plus"></i> Add New Product</h4>
         <hr>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form action="{{ url('student') }}" method="POST">
         @csrf
         
