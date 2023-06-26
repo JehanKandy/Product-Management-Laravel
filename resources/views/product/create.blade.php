@@ -11,7 +11,11 @@
         
             <div class="form-group">
                 <label for="product name">Product Name : </label>
-                <input type="text" name="product_name" id="" class="form-control">
+                <input type="text" name="product_name" id="" class="form-control"><br>
+            </div>
+            <div class="form-group">
+                <label for="product name">Product Description : </label>
+                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
             </div>
     
         </form>
