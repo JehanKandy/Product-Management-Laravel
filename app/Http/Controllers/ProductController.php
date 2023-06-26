@@ -30,7 +30,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'product_name' => 'required|max:255',
+            'product_desc' => 'required|max:255',
+            'product_qty' => 'required',
+            'product_price' => 'required',
+        ]);
     }
 
     /**
