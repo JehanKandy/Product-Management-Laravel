@@ -66,7 +66,17 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'product_name' => 'required|min:3|max:255',
+            'product_description' => 'required|min:3|max:255',
+            'qty' => 'required',
+            'product_price' => 'required',
+            'product_status' => 'required',
+            
+        ]);
+
+        Product::where('id', $id)->update($request);
+        return redirect('product')->with('flash_message', 'Product Addedd Successfully!');
     }
 
     /**

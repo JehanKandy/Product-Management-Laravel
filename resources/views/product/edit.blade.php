@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="admin-card">
-    <h4><i class="fas fa-cart-plus"></i> Add New Product</h4><br>
+    <h4><i class="fas fa-cart-plus"></i> Update Product</h4><br>
     
     <a href="{{ url('/product') }}" class="btn btn-primary" title="Back">
         Back
@@ -29,7 +29,7 @@
     
         <div class="form-group">
             <label for="product name">Update Product Name : </label>
-            <input type="text" name="product_name" id="" class="form-control" placeholder="Product Name"><br>
+            <input type="text" name="product_name" id=""  class="form-control" placeholder="Product Name"><br>
         </div>
         <div class="form-group">
             <label for="product desc">Update Product Description : </label>
@@ -52,11 +52,8 @@
         </div>
         <div class="form-group">
             <div class="row">
-                <div class="col-lg-6">
-                    <input type="reset" value="Clear" class="btn btn-secondary" style="width:100%;">
-                </div>
-                <div class="col-lg-6">
-                    <input type="submit" value="Add Product" class="btn btn-success" style="width:100%;">
+                <div class="col-lg-12">
+                    <input type="submit" value="Update Product" class="btn btn-success" style="width:100%;">
                 </div>
             </div>
         </div>
