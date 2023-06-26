@@ -6,6 +6,10 @@
         <h4><i class="fas fa-cart-plus"></i> Add New Product</h4>
         <hr>
 
+        <a href="{{ url('/product') }}" class="btn btn-primary" title="Back">
+            Back
+        </a><br><br>
+
         @if ($errors->any())
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Error</strong> Following Input Errors are Found
