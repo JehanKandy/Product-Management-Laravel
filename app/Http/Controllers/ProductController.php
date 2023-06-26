@@ -48,7 +48,8 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        
+        $product = Product::find($id);
+        return view('product.show')->with('product', $product);
     }
 
     /**
