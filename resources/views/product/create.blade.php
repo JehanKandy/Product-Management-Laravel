@@ -37,11 +37,11 @@
                 <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price"><br>
             </div>
             <div class="form-group">
-                <label for="product Price">Product Status : </label>
-                <h5>
+                <label for="product Price">Product Status : </label><br>
+                <h6>
                     <input type="radio" name="product_status" id="" value="1"> In Stock <br>
-                    <input type="radio" name="product_status" id="" value="0"> Out Of Stock <br>
-                </h5>
+                    <input type="radio" name="product_status" id="" value="0"> Out Of Stock <br><br>
+                </h6>
             </div>
             <div class="form-group">
                 <div class="row">
