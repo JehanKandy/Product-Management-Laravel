@@ -1,7 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.admin_dash')
+
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -14,10 +15,41 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged as Admin!') }}
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
+
+
+
+        <div class="admin-card">
+            <div class="row">
+                <div class="col-lg-4"><i class='fas fa-user-tie icon-admin'></i></div>
+                <div class="col-lg-6"><p class="title-card">Admins</p></div>
+                <div class="col-lg-2"><p class="body-card">50</p></div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+            <div class="row">
+                <div class="col-lg-4"><i class='fas fa-chalkboard-teacher icon-admin'></i></div>
+                <div class="col-lg-6"><p class="title-card">Staff</p></div>
+                <div class="col-lg-2"><p class="body-card">50</p></div>
+          </div>
+        </div>
+
+
+        <div class="admin-card">
+            <div class="row">
+                <div class="col-lg-4"><i class='fas fa-users icon-admin'></i></div>
+                <div class="col-lg-6"><p class="title-card">Clients</p></div>
+                <div class="col-lg-2"><p class="body-card">50</p></div>
+            </div>
+        </div>
+
+
+
 @endsection
