@@ -29,7 +29,16 @@
                         <td>{{ $item->product_name }}</td>
                         <td>{{ $item->qty }}</td>
                         <td>{{ $item->product_price }}</td>
-                        <td>{{ $item->product_status }}</td>
+                        {{-- <td>{{ $item->product_status }}</td> --}}
+                        <td>
+                            @php
+                                if($item->product_status == 1){
+                                    echo "";
+                                }elseif ($item->product_status == 0) {
+                                    echo "";
+                                }
+                            @endphp
+                        </td>
                         <td>{{ $item->created_at }}</td>
 
                         <td>
