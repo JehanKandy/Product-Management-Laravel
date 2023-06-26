@@ -24,7 +24,7 @@
         </div>
     @endif
 
-    <form action="{{ url('product/' .$students->id) }}" method="POST">
+    <form action="{{ url('product/' .$product->id) }}" method="POST">
     @csrf
     
         <div class="form-group">
