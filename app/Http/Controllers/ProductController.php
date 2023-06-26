@@ -71,12 +71,11 @@ class ProductController extends Controller
             'product_description' => 'required|min:3|max:255',
             'qty' => 'required',
             'product_price' => 'required',
-            'product_status' => 'required',
-            
+           
         ]);
 
         Product::where('id', $id)->update($request);
-        return redirect('product')->with('flash_message', 'Product Addedd Successfully!');
+        return redirect('product')->with('flash_message', 'Product Updated Successfully!');
     }
 
     /**
