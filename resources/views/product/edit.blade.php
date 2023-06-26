@@ -37,14 +37,22 @@
         </div>
         <div class="form-group">
             <label for="product qty">Update Product Qty : </label>
-            <input type="number" name="qty" id="" class="form-control" placeholder="Product Qty"><br>
+            <input type="number" name="qty" id="" class="form-control" placeholder="Product Qty" value="{{ $product->qty }}"><br>
         </div>
         <div class="form-group">
             <label for="product Price">Update Product Price : </label>
-            <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price"><br>
+            <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price" value="{{ $product->product_price }}"><br>
         </div>
         <div class="form-group">
             <label for="product Price">Update Product Status : </label><br>
+            @php
+                if($product->product_status == 1){
+                    echo "<h4 class='badge bg-success'>In Stock</h4>";
+                }
+                elseif ($product->product_status == 0) {
+                    echo "<h4 class='badge bg-danger'>Out of Stock</h4>";
+                }
+            @endphp
             <h6>
                 <input type="radio" name="product_status" id="" value="1"> In Stock <br>
                 <input type="radio" name="product_status" id="" value="0"> Out Of Stock <br><br>
