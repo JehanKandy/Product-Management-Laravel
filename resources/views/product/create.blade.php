@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label for="product desc">Product Description : </label>
-                <textarea name="product_desc" id="" cols="20" rows="10" class="form-control" style="resize: none;" placeholder="Product Description"></textarea><br>
+                <textarea name="product_description" id="" cols="20" rows="10" class="form-control" style="resize: none;" placeholder="Product Description"></textarea><br>
             </div>
             <div class="form-group">
                 <label for="product qty">Product Qty : </label>
