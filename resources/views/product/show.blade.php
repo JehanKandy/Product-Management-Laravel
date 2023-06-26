@@ -21,5 +21,21 @@
                 {{ $product->product_description  }}
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Product Qty</h4>
+            </div>
+            <div class="col-lg-9">
+                {{ $product->qty  }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Product Price</h4>
+            </div>
+            <div class="col-lg-9">
+                {{ $product->product_price  }}
+            </div>
+        </div>
     </div>
 @endsection
