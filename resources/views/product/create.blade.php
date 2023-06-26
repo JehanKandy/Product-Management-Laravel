@@ -4,11 +4,12 @@
 @section('content')
     <div class="admin-card">
         <h4><i class="fas fa-cart-plus"></i> Add New Product</h4>
-        <hr>
-
+        
         <a href="{{ url('/product') }}" class="btn btn-primary" title="Back">
             Back
         </a><br><br>
+
+        <hr>
 
         @if ($errors->any())
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
