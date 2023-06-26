@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="admin-card">
-        <h4><i class="fas fa-cart-plus"></i> Add New Product</h4>
+        <h4><i class="fas fa-cart-plus"></i> Add New Product</h4><br>
         
         <a href="{{ url('/product') }}" class="btn btn-primary" title="Back">
             Back
