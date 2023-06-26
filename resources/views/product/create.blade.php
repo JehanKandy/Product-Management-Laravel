@@ -37,6 +37,13 @@
                 <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price"><br>
             </div>
             <div class="form-group">
+                <label for="product Price">Product Status : </label>
+                <h5>
+                    <input type="radio" name="product_stauts" id="" value="1"> In Stock <br>
+                    <input type="radio" name="product_stauts" id="" value="0"> Out Of Stock <br>
+                </h5>
+            </div>
+            <div class="form-group">
                 <div class="row">
                     <div class="col-lg-6">
                         <input type="reset" value="Clear" class="btn btn-secondary" style="width:100%;">
