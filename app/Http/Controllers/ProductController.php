@@ -36,6 +36,9 @@ class ProductController extends Controller
             'product_qty' => 'required',
             'product_price' => 'required',
         ]);
+
+        Product::create($request->all());
+        return redirect('products')->with('flash_message', 'Product Addedd Successfully!');
     }
 
     /**
