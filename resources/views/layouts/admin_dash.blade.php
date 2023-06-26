@@ -99,9 +99,9 @@
             <a href="{{url('/admin')}}" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                     class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
             <a href="{{url('/users')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-user-tie me-2"></i>All Users</a>
+                    class="fas fa-user-tie me-2"></i>Users</a>
             <a href="{{url('/product')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-gift me-2"></i>All Products</a>                    
+                    class="fas fa-gift me-2"></i>Products</a>                    
 
             
         </div>
