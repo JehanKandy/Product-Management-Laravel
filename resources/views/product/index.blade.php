@@ -7,8 +7,9 @@
         <h3>Products</h3>
         <br>
         <a href="{{ url('/product/create') }}" class="btn btn-success btn-sm" title="Add New Student">
-            <i class="fa fa-plus" aria-hidden="true"></i> Add New
+            <i class="fa fa-plus" aria-hidden="true"></i> Add New Product
         </a>
+        <br><br>
         <table class="table">
             <thead class="table-primary">
                 <tr>
