@@ -28,7 +28,7 @@
     @csrf
     @method("PATCH")
     
-    <input type="hidden" name="id" id="id" value="{{ $product->id }}" id="id" />
+    <input type="hidden" name="id" value="{{ $product->id }}">
         <div class="form-group">
             <label for="product name">Update Product Name : </label>
             <input type="text" name="product_name" id=""  class="form-control" value="{{ $product->product_name }}" placeholder="Product Name"><br>
@@ -43,7 +43,7 @@
         </div>
         <div class="form-group">
             <label for="product Price">Update Product Price : </label>
-            <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price" value="{{ $product->product_price }}"><br>
+            <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.5" placeholder="Product Price" value="{{ $product->product_price }}"><br>
         </div>
         <div class="form-group">
             <label for="product Price">Update Product Status : </label><br>

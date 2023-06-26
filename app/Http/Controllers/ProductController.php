@@ -66,16 +66,24 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $request->validate([
-            'product_name' => 'required|min:3|max:255',
-            'product_description' => 'required|min:3|max:255',
-            'qty' => 'required',
-            'product_price' => 'required',
-           
-        ]);
 
-        Product::where('id', $id)->update($request);
-        return redirect('product')->with('flash_message', 'Product Updated Successfully!');
+        // $product = Product::find($id);
+
+        // $request->validate([
+        //     'product_name' => 'required|min:3|max:255',
+        //     'product_description' => 'required|min:3|max:255',
+        //     'qty' => 'required',
+        //     'product_price' => 'required',
+           
+        // ]);
+
+        // Product::where('id', $id)->update($request);
+        // return redirect('product')->with('flash_message', 'Product Updated Successfully!');
+
+        $product = Product::find($id);
+        $input = $request->all();
+        $product->update($input);
+        return redirect('product')->with('flash_message', 'student Updated!');  
     }
 
     /**
