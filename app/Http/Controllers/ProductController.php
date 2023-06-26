@@ -35,6 +35,7 @@ class ProductController extends Controller
             'product_desc' => 'required|min:3|max:255',
             'product_qty' => 'required',
             'product_price' => 'required',
+            'product_status' => 'required',
             
         ]);
 
