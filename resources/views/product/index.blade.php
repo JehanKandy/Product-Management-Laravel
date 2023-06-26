@@ -10,6 +10,12 @@
             <thead class="table-primary">
                 <tr>
                     <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Description</th>
+                    <th>Product Qty</th>
+                    <th>Product Price</th>
+                    <th>Product Status</th>
+                    <th>Product Add Date</th>
                 </tr>
             </thead>
         </table>
