@@ -41,5 +41,21 @@
             </div>
         </div>
         <hr>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Product Status</h4>
+            </div>
+            <div class="col-lg-9">
+                @php
+                    if( $product->product_status == 1){
+                        echo "<h4 class='badge bg-success'>In Stock</h4>";
+                    }
+                    elseif( $product->product_status == 0){
+                        echo "<h4 class='badge bg-danger'>Out of Stock</h4>";
+                    }
+                @endphp
+            </div>
+        </div>
+        
     </div>
 @endsection
