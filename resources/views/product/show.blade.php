@@ -13,6 +13,7 @@
                 {{ $product->product_name  }}
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-lg-3">
                 <h4>Product Description</h4>
@@ -21,6 +22,7 @@
                 {{ $product->product_description  }}
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-lg-3">
                 <h4>Product Qty</h4>
@@ -29,6 +31,7 @@
                 {{ $product->qty  }}
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-lg-3">
                 <h4>Product Price</h4>
@@ -37,5 +40,6 @@
                 {{ $product->product_price  }}
             </div>
         </div>
+        <hr>
     </div>
 @endsection
