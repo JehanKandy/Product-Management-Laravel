@@ -40,7 +40,7 @@ class ProductController extends Controller
         ]);
 
         Product::create($request->all());
-        return redirect('product.index')->with('flash_message', 'Product Addedd Successfully!');
+        return redirect('product')->with('flash_message', 'Product Addedd Successfully!');
     }
 
     /**
