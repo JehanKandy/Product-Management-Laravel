@@ -7,10 +7,18 @@
         <h3>description : <b> {{ $product->product_description }} </b></h3><br><br>
         <div class="row">
             <div class="col-lg-3">
-                Product Name
+                <h4>Product Name</h4>
             </div>
             <div class="col-lg-9">
                 {{ $product->product_name  }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Product Description</h4>
+            </div>
+            <div class="col-lg-9">
+                {{ $product->product_description  }}
             </div>
         </div>
     </div>
