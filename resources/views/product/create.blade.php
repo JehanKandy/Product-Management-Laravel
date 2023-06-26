@@ -17,7 +17,7 @@
             </div>
         @endif
 
-        <form action="{{ url('student') }}" method="POST">
+        <form action="{{ url('product') }}" method="POST">
         @csrf
         
             <div class="form-group">
