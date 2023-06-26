@@ -39,8 +39,8 @@
             <div class="form-group">
                 <label for="product Price">Product Status : </label>
                 <h5>
-                    <input type="radio" name="product_stauts" id="" value="1"> In Stock <br>
-                    <input type="radio" name="product_stauts" id="" value="0"> Out Of Stock <br>
+                    <input type="radio" name="product_status" id="" value="1"> In Stock <br>
+                    <input type="radio" name="product_status" id="" value="0"> Out Of Stock <br>
                 </h5>
             </div>
             <div class="form-group">
