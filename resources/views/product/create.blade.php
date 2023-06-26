@@ -25,7 +25,16 @@
                 <label for="product Price">Product Price : </label>
                 <input type="number" name="product_price" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Product Price"><br>
             </div>
-    
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="reset" value="Clear" class="btn btn-secondary">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="submit" value="Add Product" class="btn btn-success">
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 @endsection
