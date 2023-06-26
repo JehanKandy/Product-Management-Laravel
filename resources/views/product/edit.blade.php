@@ -26,7 +26,9 @@
 
     <form action="{{ url('product/' .$product->id) }}" method="POST">
     @csrf
+    @method("PATCH")
     
+    <input type="hidden" name="id" id="id" value="{{ $product->id }}" id="id" />
         <div class="form-group">
             <label for="product name">Update Product Name : </label>
             <input type="text" name="product_name" id=""  class="form-control" value="{{ $product->product_name }}" placeholder="Product Name"><br>
